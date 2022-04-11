@@ -4,13 +4,20 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cassanipedro/mercadolievre.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cassanipedro/mercadolievre/issues"
+  },
+  "homepage": "https://github.com/cassanipedro/mercadolievre#readme",
   "dependencies": {
-    "nodemon": "^2.0.15",
-    "xpress": "^2.4.6"
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
   }
 }
