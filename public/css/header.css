@@ -31,11 +31,23 @@ header{
 .logo{
     width: 50%;
 }
+@keyframes rotacion{
+    0%{ rotate:0deg ;}
+    50%{rotate:45deg;}
+    100%{rotate:90deg;}
+}
 .product__information2{
     height:93% ;
+    box-shadow: 0px 0px 0px rgb(100 100 100);
 
        margin: 10px 10px 10px 10px ;
     }
+    .product__information2:hover{
+        height:93% ;
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+    
+           margin: 10px 10px 10px 10px ;
+        }
 .product__information{
        margin: 10px 10px 10px 10px ;
     }
@@ -50,6 +62,7 @@ main{
 display: none;
 margin-top: 20px;
 color: #666;
+opacity: 0;
 }
 .sub__header{
     font-size: var(--Descripciones);
@@ -84,9 +97,13 @@ h3{
     border-radius: 50%;
     position: relative;
     left: 85%;
-    top: -22px;
+    top: -25px;
 
+   
 }
+#camioncito:hover{
+    transition-duration: 500ms;  
+      transform:rotateZ(-90deg)}
 p{
     font-size: var(--Cuerpodetexto);
 }
@@ -120,10 +137,16 @@ p{
 text-align: center;
 color:white;
 }
+.icono:hover{
+    color: var(--Amarillo);
+}
 picture img{
     width:80%;
 }
+main section article{background-color: var(--Grisclaro);
+}
 main section article i,
+
 .descuentos{
     color: #39b54a;
 }
@@ -154,6 +177,7 @@ footer{
     width: 100%;
     border-top: 1px solid #ebebeb;
     padding: 15px;
+    background-color: white;
 }
 .copy__right{
 text-align: left;
@@ -162,9 +186,16 @@ color: var(--Grisoscuro);
 
 @media only screen and (min-width:361px){
 .product__information{
-    box-shadow: 0px 0px 10px rgb(100 100 100);
+    box-shadow: 0px 0px 0px rgb(100 100 100);
+    background-color:var(--Grisclaro) ;
 }
 .product__information2{
+    box-shadow: 0px 0px 0px rgb(100 100 100);
+}
+.product__information:hover{
+    box-shadow: 0px 0px 10px rgb(100 100 100);
+}
+.product__information:hover{
     box-shadow: 0px 0px 10px rgb(100 100 100);
 }
 .articulo{
@@ -196,7 +227,11 @@ color: var(--Grisoscuro);
     margin:15px;
     height: 30px;
     border-radius: 5px;
+}.log--buttom:hover{
+    background: color #02A; ;
 }
+
+
 .radio--format{
 
     margin:10px;
@@ -205,6 +240,9 @@ color: var(--Grisoscuro);
 width: 200%;
 height: 35px;
 
+}
+.articulo:hover{
+opacity: 1;
 }
 .checkbox--format{
 margin:10px;
@@ -238,6 +276,13 @@ LABEL.indented-checkbox-text
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+    .main--footer{
+        display: flex;
+        flex-direction: row;
+    }
+    .burger-menu{
+        display:none;
     }
 }    
 }
