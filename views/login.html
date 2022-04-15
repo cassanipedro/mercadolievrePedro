@@ -12,30 +12,37 @@
 </head>
 <body>
     <header>
+
+
         <div class="header-logo">
-            <img class="logo" src="/img/logo-mercado-liebre.svg" alt="este es el logo">
-            <form>
-                <label for="text">buscar productos marcas y mas:</label>
-                <input type="text" id="fname" name="fname"><br>
-                <input type="submit" value="Buscar">
-            </form>
-        </div>
-    <p class="sub__header"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
-    <nav>
-        <ul>
-            <li><a href="ofertas.html">Ofertas</a></li>
-            <li><a href="tiendas_oficiales.html">Tiendas Oficiales</a></li>
-            <li><a href="vender.html">vender</a></li>
-            <li><a href="ayuda.html">Ayuda</a></li>
-        </ul>
-    </nav>
-    <nav>
-        <ul>
+            <div class="header__trick" >
+
+                <img class="logo" src="/img/logo-mercado-liebre.svg" alt="este es el logo">
+                <form class="form" action="" method="POST">
+                    <input  class="search__bar" type="text" placeholder="Buscá productos, marcas y más" id="fname" name="fname" required>
+                    <button type="submit" value="Buscar"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+                <p class="sub__header"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+            <section class="header__acomodation">
+                
+        <nav >
+            <ul class="header__position">
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="tiendas_oficiales.html">Tiendas Oficiales</a></li>
+                <li><a href="vender.html">vender</a></li>
+                <li><a href="ayuda.html">Ayuda</a></li>
+            </ul>
+        </nav>
+        <nav >
+        <ul class="header__position">
             <li><a href="/registro">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
             <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
             <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
         </ul>
     </nav>
+</section>
     <div class="burger-menu">
         <i class="fa fa-bars burger"></i>
         </div>
