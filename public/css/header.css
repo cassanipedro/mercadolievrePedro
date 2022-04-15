@@ -1,243 +1,288 @@
 :root{
 
---Amarillo: #EAC926;
---Azul: #03264C;
---Celeste: #1259c3;
---Grisoscuro: #666;
---Grisclaro: #ebebeb;
---Verde: #39b54a;
---Familia: 'Roboto';
---Cuerpodetexto: 12px;
---Titulares: 24px;
---Precios: 18px;
---Descuentos: 16px;
---Descripciones: 16px;
-}
-*{
-margin: 0px;
-padding:0px;
-box-sizing:border-box;
-
-}
-
-header{
-    background-color: var(--Amarillo);
-}
-.header-logo{
-    display: flex;
-    flex-direction: row;
-    padding: 5%;
-}
-.logo{
-    width: 50%;
-}
-.product__information2{
-    height:93% ;
-
-       margin: 10px 10px 10px 10px ;
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Grisoscuro: #666;
+    --Grisclaro: #ebebeb;
+    --Verde: #39b54a;
+    --Familia: 'Roboto';
+    --Cuerpodetexto: 12px;
+    --Titulares: 24px;
+    --Precios: 18px;
+    --Descuentos: 16px;
+    --Descripciones: 16px;
     }
-.product__information{
-       margin: 10px 10px 10px 10px ;
+    *{
+    margin: 0px;
+    padding:0px;
+    box-sizing:border-box;
+    
     }
-.product--iamge{
-    width:100%;
-}
-main{
-    width: 90%;
-    margin:0 auto;
-}
-.articulo{
-display: none;
-margin-top: 20px;
-color: #666;
-}
-.sub__header{
-    font-size: var(--Descripciones);
-    text-align: center;
-}
-body{
-    font-family: 'Roboto',sans-serif;
-    background-color: var(--Grisclaro);
-}
-ul li{
-    list-style-type: none;
-}
-img {
-    width: 20%;
-}
-h2{
-
-    font-family: var(--Familia);
-    font-size: var(--Titulares);
-}
-h3{
-    font-size: 24px;
-}
-#camioncito{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: relative;
-    left: 85%;
-    top: -22px;
-
-}
-p{
-    font-size: var(--Cuerpodetexto);
-}
-.precios{
-    width: 70%;
-    font-size: var(--Precios);
-}
-.descuentos{
-    font-size: var(--Descuentos);
-    width: 30%;
-}
-.icono{
-    align-self: center;
-    font-size: 29px;
-    color: var(--Celeste);
-}
-.burger-menu i{
-    background-color: var(--Celeste);
-    color:#fff;
-    font-size: 20px;
-    height: 40px;
-    padding: 10px;
-    margin:10px 0px 20px 0px;
-    width: 40px;
-    border-radius: 5px;
-}
-.banner{
-    width: 100%;
-}
-.burger-menu {
-text-align: center;
-color:white;
-}
-picture img{
-    width:80%;
-}
-main section article i,
-.descuentos{
-    color: #39b54a;
-}
-.main--footer{
-    background-color: #fff;
-}
-h3,
-.description{
-    color:#666;
-}
-.precios2{
-    display: flex;
-    flex-direction: row;
-}
-.description{
+    
+    header{
+        background-color: var(--Amarillo);
+    }
+    .header-logo{
+        display: flex;
+        flex-direction: row;
+        padding: 5%;
+    }
+    .logo{
+        width: 50%;
+    }
+    @keyframes rotacion{
+        0%{ rotate:0deg ;}
+        50%{rotate:45deg;}
+        100%{rotate:90deg;}
+    }
+    .product__information2{
+        height:93% ;
+        box-shadow: 0px 0px 0px rgb(100 100 100);
+    
+           margin: 10px 10px 10px 10px ;
+        }
+        .product__information2:hover{
+            height:93% ;
+            box-shadow: 0px 0px 10px rgb(100 100 100);
+        
+               margin: 10px 10px 10px 10px ;
+            }
+    .product__information{
+           margin: 10px 10px 10px 10px ;
+        }
+    .product--iamge{
+        width:100%;
+    }
+    main{
+        width: 90%;
+        margin:0 auto;
+    }
+    .articulo{
     display: none;
     margin-top: 20px;
-}
-.camion{
-    border:2px;
-    border-radius: 50%;
-    color:var(--verde)
-}
-footer{
+    color: #666;
+    opacity: 0;
+    }
+    .sub__header{
+        font-size: var(--Descripciones);
+        text-align: center;
+    }
+    body{
+        font-family: 'Roboto',sans-serif;
+        background-color: var(--Grisclaro);
+    }
+    ul li{
+        list-style-type: none;
+    }
+    img {
+        width: 20%;
+    }
+    h2{
+    
+        font-family: var(--Familia);
+        font-size: var(--Titulares);
+    }
+    h3{
+        font-size: 24px;
+    }
+    #camioncito{
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: relative;
+        left: 85%;
+        top: -25px;
+    
+       
+    }
+    #camioncito:hover{
+        transition-duration: 500ms;  
+          transform:rotateZ(-90deg)}
+    p{
+        font-size: var(--Cuerpodetexto);
+    }
+    .precios{
+        width: 70%;
+        font-size: var(--Precios);
+    }
+    .descuentos{
+        font-size: var(--Descuentos);
+        width: 30%;
+    }
+    .icono{
+        align-self: center;
+        font-size: 29px;
+        color: var(--Celeste);
+    }
+    .burger-menu i{
+        background-color: var(--Celeste);
+        color:#fff;
+        font-size: 20px;
+        height: 40px;
+        padding: 10px;
+        margin:10px 0px 20px 0px;
+        width: 40px;
+        border-radius: 5px;
+    }
+    .banner{
+        width: 100%;
+    }
+    .burger-menu {
     text-align: center;
-}
-.articulo--principal{
-    width: 100%;
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-}
-.copy__right{
-text-align: left;
-color: var(--Grisoscuro);
-}
-
-@media only screen and (min-width:361px){
-.product__information{
-    box-shadow: 0px 0px 10px rgb(100 100 100);
-}
-.product__information2{
-    box-shadow: 0px 0px 10px rgb(100 100 100);
-}
-.articulo{
-    display: block;
-}
-.inicio{
-    display: flex;
-    flex-direction: row;
-}
-}
-.log--style{
-    display: flex;
-    flex-direction: column;
-}
-.log--format{
-    width:100%;
-    margin: 15px;
-}
-.register--format{
-    margin:15px;
-    padding:10px;
-}
-.profile--format{
-    display: flex;
-    flex-direction: row;
-}
-.log--buttom{
-    background-color: var(--Celeste);
-    margin:15px;
-    height: 30px;
-    border-radius: 5px;
-}
-.radio--format{
-
-    margin:10px;
-}
-.buscador{
-width: 200%;
-height: 35px;
-
-}
-.checkbox--format{
-margin:10px;
-
-}
-LABEL.indented-checkbox-text
-{
-  margin-left: 2em;
-  display: block;
-  position: relative;
-  margin-top: -1.1em;  /* make this margin match whatever your line-height is */
-  line-height: 1.4em;  /* can be set here, or elsewehere */
-}
-@media only screen and (min-width:769px){
-.tablet--format{
-    display: flex;
-    flex-direction: row;
-}
-.main--visit{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-@media only screen and (min-width:1200px){
-    .main--visit{
-        display:flex;
+    color:white;
+    }
+    .icono:hover{
+        color: var(--Amarillo);
+    }
+    picture img{
+        width:80%;
+    }
+    main section article{background-color: var(--Grisclaro);
+    }
+    main section article i,
+    
+    .descuentos{
+        color: #39b54a;
+    }
+    .main--footer{
+        background-color: #fff;
+    }
+    h3,
+    .description{
+        color:#666;
+    }
+    .precios2{
+        display: flex;
         flex-direction: row;
     }
+    .description{
+        display: none;
+        margin-top: 20px;
+    }
+    .camion{
+        border:2px;
+        border-radius: 50%;
+        color:var(--verde)
+    }
+    footer{
+        text-align: center;
+    }
+    .articulo--principal{
+        width: 100%;
+        border-top: 1px solid #ebebeb;
+        padding: 15px;
+        background-color: white;
+    }
+    .copy__right{
+    text-align: left;
+    color: var(--Grisoscuro);
+    }
+    
+    @media only screen and (min-width:361px){
+    .product__information{
+        box-shadow: 0px 0px 0px rgb(100 100 100);
+        background-color:var(--Grisclaro) ;
+    }
+    .product__information2{
+        box-shadow: 0px 0px 0px rgb(100 100 100);
+    }
+    .product__information:hover{
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+    }
+    .product__information:hover{
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+    }
+    .articulo{
+        display: block;
+    }
+    .inicio{
+        display: flex;
+        flex-direction: row;
+    }
+    }
+    .log--style{
+        display: flex;
+        flex-direction: column;
+    }
+    .log--format{
+        width:100%;
+        margin: 15px;
+    }
+    .register--format{
+        margin:15px;
+        padding:10px;
+    }
+    .profile--format{
+        display: flex;
+        flex-direction: row;
+    }
+    .log--buttom{
+        background-color: var(--Celeste);
+        margin:15px;
+        height: 30px;
+        border-radius: 5px;
+    }.log--buttom:hover{
+        background: color #02A; ;
+    }
+    
+    
+    .radio--format{
+    
+        margin:10px;
+    }
+    .buscador{
+    width: 200%;
+    height: 35px;
+    
+    }
+    .articulo:hover{
+    opacity: 1;
+    }
+    .checkbox--format{
+    margin:10px;
+    
+    }
+    LABEL.indented-checkbox-text
+    {
+      margin-left: 2em;
+      display: block;
+      position: relative;
+      margin-top: -1.1em;  /* make this margin match whatever your line-height is */
+      line-height: 1.4em;  /* can be set here, or elsewehere */
+    }
+    @media only screen and (min-width:769px){
     .tablet--format{
         display: flex;
         flex-direction: row;
+    }
+    .main--visit{
+        display:flex;
+        flex-direction: column;
         justify-content: space-between;
     }
-}    
-}
+    
+    @media only screen and (min-width:1200px){
+        .main--visit{
+            display:flex;
+            flex-direction: row;
+        }
+        .tablet--format{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .main--footer{
+            display: flex;
+            flex-direction: row;
+        }
+        .burger-menu{
+            display:none;
+        }
+    }    
+    }
