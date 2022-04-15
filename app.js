@@ -22,3 +22,4 @@ app.get("/login",(req,res)=>{
 app.post("/login",(req,res)=>{
     res.sendFile(path.resolve(__dirname,"./views/login.html"))
 })
+var azul="azul"
